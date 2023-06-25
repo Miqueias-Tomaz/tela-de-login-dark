@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-login {
@@ -26,12 +27,8 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;    
-}
-
-h1 {
-    color: #77ffcd;
-    font-weight: bolder;
+    align-items: center; 
+    color: white;   
 }
 
 .card-login {
@@ -46,9 +43,47 @@ h1 {
     box-shadow: 0px 10px 40px #00000057;
 }
 
+div > h1 {
+    color: #00ffa2;
+    padding: 10px;
+}
+
 .textfield {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.textfield > input {
+    padding: 10px;
+    margin: 5px 0px;
+    background-color: #554975;
+    border: none;
+    border-radius: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #7f70a5;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00ffa2;
+    color: #2f2841;
+    font-weight: bolder;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 15px #00ffa2;
+}
+
+.btn-login:hover {
+    background-color: #96ffd8;
+}
+
+.main-login > .l-login > img {
+    width: 400px;
 }
